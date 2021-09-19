@@ -1,11 +1,8 @@
 {
     "name": "git",
     "author": "jmc",
-    "version": 1.0,
+    "version": 0.7,
     "categories": [
-        "networking",
-        "firewalls",
-        "routing",
         "git",
         "configuration",
         "backups",
@@ -161,20 +158,20 @@
                     "jimi_syntax": false
                 },
                 {
-                    "schema_item": "git_clone_local_path",
-                    "schema_value": "git_clone_local_path",
-                    "type": "input",
-                    "label": "Git Clone Local Path",
-                    "description": "e.g. /tmp/git/backups",
-                    "required": true,
-                    "jimi_syntax": false
-                },
-                {
                     "schema_item": "git_clone_subpath",
                     "schema_value": "git_clone_subpath",
                     "type": "input",
                     "label": "Git Clone Subpath",
                     "description": "Generally this should match the git project name",
+                    "required": true,
+                    "jimi_syntax": false
+                },
+                {
+                    "schema_item": "git_clone_overwrite",
+                    "schema_value": "git_clone_overwrite",
+                    "type": "checkbox",
+                    "label": "Git Clone Overwrite Option",
+                    "description": "When try existing git clone locations will be deleted.",
                     "required": true,
                     "jimi_syntax": false
                 }
